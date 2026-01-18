@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Info Calculator</title>
+    
+    <!-- Google Fonts for Professional Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="heading">Nutritional Information Calculator</h1>
+
+        <!-- Form for food item and quantity -->
+        <form id="foodForm" class="form">
+            <div class="form-group">
+                <label for="food_item" class="label">Enter a food item:</label>
+                <input type="text" id="food_item" name="food_item" class="input" placeholder="e.g., apple, banana" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity" class="label">Enter the quantity in grams:</label>
+                <input type="number" id="quantity" name="quantity" class="input" placeholder="e.g., 100" required>
+            </div>
+
+            <button type="submit" class="btn">Calculate Nutrition Info</button>
+        </form>
+
+        <!-- Section to display food image -->
+        <div id="imageContainer">
+            <img id="foodImage" src="" alt="Food image will appear here" class="food-image" style="display:none;">
+        </div>
+
+        <!-- Section to display nutritional information -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
